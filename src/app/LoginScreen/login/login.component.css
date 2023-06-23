@@ -6,14 +6,20 @@
 /** this is to chnage things on a global scale.*/
 
 
-body {
+ body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background:#ee970b;
+    background:#007d2a;
     transition: .5s;
 }
+
+
+.body.active{
+    background: #919191;
+}
+
 /**creating styles for the entire body witch is the orange BG*/
 
 .container {
@@ -80,5 +86,6 @@ body {
     font-weight: 500;
     border: none;
     cursor:pointer;
+    border-radius: 5px; 
 }
 
