@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/** this is to chnage things on a global scale.*/
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:#ee970b;
+    transition: .5s;
+}
+/**creating styles for the entire body witch is the orange BG*/
+
+.container {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+}
+
+.Background-colour{
+ 
+        position: absolute;
+        top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 420px;
+        
+
+
+}
