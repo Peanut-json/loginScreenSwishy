@@ -13,6 +13,7 @@
     min-height: 100vh;
     background:#007d2a;
     transition: .5s;
+    
 }
 
 
@@ -27,19 +28,19 @@
     width: 800px;
     height: 500px;
     margin: 20px;
+    
 }
 
 .OrangeBG{
- 
-        position: absolute;
-        top: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 420px;
-        background: rgba(255,255,255, .2);
-        box-shadow: 0 5px 45px rgba(0,0,0, .15);
+ position: absolute;
+ top: 40px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+width: 100%;
+ height: 420px;
+ background: rgba(255,255,255, .2);
+ box-shadow: 0 5px 45px rgba(0,0,0, .15);
 }
 
 .OrangeBG .box {
@@ -65,6 +66,8 @@
     align-items: center;
     box-shadow: 0 5px 45px rgba(0,0,0, .25); 
     transition: ease-in-out .5s;
+    overflow: hidden;
+    border-radius: 3px;
 }
 /** this causes the slide to move left and right */
 .form-box.active {
@@ -86,6 +89,79 @@
     font-weight: 500;
     border: none;
     cursor:pointer;
-    border-radius: 5px; 
+    border-radius: 0; 
 }
 
+/**all form styling to create the username and password design */
+
+.form-box .form{
+    position: absolute;
+    width: 80%;
+    transition: .5s;
+    padding: 50px;
+}
+
+
+.form-box .signinform{
+    transition-delay: .25s;
+
+}
+
+.form-box.active .signinform{
+  left: -100%;
+    transition-delay: 0;
+}
+
+.form-box .signupform{
+    left: 100%; 
+    transition-delay: 0;
+}
+
+.form-box.active .signupform{
+    left: 0%; 
+    transition-delay: .25s;
+}
+
+
+
+.form-box .form form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.form form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #333;
+}
+
+.form form h3 {
+
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+ /** button styling , remember when using inputs to have them together not apart      input[] good     intput [] bad   */
+.form form input[type="submit"] {
+    background: #007d2a;
+    border:  none;
+    max-width: 100px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form form input[value="Sign Up"] {
+    background: #919191;
+    border:  none;
+    max-width: 100px;
+    color: #fff;
+    cursor: pointer;
+}
+
+a {
+    color: #333;
+    font-size: 14px;
+}
