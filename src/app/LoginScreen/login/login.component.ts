@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, ElementRef, ViewChild, } from '@angular/core';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -27,4 +27,7 @@ export class LoginComponent {
 
 }
 
+//* creating on click event locgic to switch between signup and signin with the respected form and body elements. 
 
+//* using child elements to be able ot view a add and remove state , this then creates a event listener to see whitch has been clicked , 
+//* depending on whitch one is clicked will determine the method that will activate.

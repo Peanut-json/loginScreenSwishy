@@ -161,6 +161,8 @@ width: 100%;
     cursor: pointer;
 }
 
+/** Styling anchor */
+
 a {
     color: #333;
     font-size: 14px;
